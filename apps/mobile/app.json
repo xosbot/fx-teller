@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "FX-Teller",
+    "slug": "fx-teller",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "fxteller",
+    "android": {
+      "package": "com.fxteller.app",
+      "permissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE",
+        "android.permission.INTERNET",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.fxteller.app",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"],
+        "LSApplicationQueriesSchemes": ["tez", "phonepe", "paytmmp"]
+      },
+      "supportsTablet": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#F5B400"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "apiUrl": "http://localhost:3000/api"
+    }
+  }
+}

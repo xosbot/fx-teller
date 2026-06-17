@@ -1,0 +1,12 @@
+{
+  "name": "floating-overlay",
+  "version": "1.0.0",
+  "description": "Floating trade-call overlay for FX-Teller",
+  "main": "src/index.ts",
+  "private": true,
+  "platforms": ["android"],
+  "scripts": {
+    "build": "echo 'noop'",
+    "typecheck": "tsc --noEmit"
+  }
+}

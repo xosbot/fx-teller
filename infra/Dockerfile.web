@@ -1,0 +1,26 @@
+# Build for the Next.js host console
+FROM node:20-alpine AS builder
+WORKDIR /app
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+COPY package.json pnpm-workspace.yaml* ./
+COPY tsconfig.base.json ./
+COPY packages ./packages
+COPY apps/host-console ./apps/host-console
+RUN corepack enable && corepack prepare pnpm@11.5.2 --activate
+RUN pnpm install --filter @fx-teller/host-console... --frozen-lockfile
+RUN pnpm --filter @fx-teller/host-console build
+
+FROM node:20-alpine
+WORKDIR /app
+ENV NODE_ENV=production
+RUN addgroup -g 1001 -S nodejs && adduser -S nodejs -u 1001
+COPY --from=builder /app/apps/host-console/.next ./apps/host-console/.next
+COPY --from=builder /app/apps/host-console/public ./apps/host-console/public
+COPY --from=builder /app/apps/host-console/package.json ./apps/host-console/package.json
+COPY --from=builder /app/apps/host-console/next.config.mjs ./apps/host-console/next.config.mjs
+COPY --from=builder /app/node_modules ./node_modules
+USER nodejs
+EXPOSE 3000
+WORKDIR /app/apps/host-console
+CMD ["npx", "next", "start", "-p", "3000"]
