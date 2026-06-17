@@ -2,7 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "pnpm turbo build --filter=@fx-teller/website",
   "installCommand": "pnpm install --ignore-scripts",
-  "framework": "nextjs",
   "outputDirectory": "apps/website/.next",
   "cleanUrls": true
 }
