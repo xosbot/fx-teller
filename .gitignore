@@ -46,3 +46,4 @@ web-build/
 
 # Postgres
 pgdata/
+.vercel

@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FX-Teller Phase 1 — Project Proposal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #ffffff;
+    --bg-muted: #f8f9fb;
+    --bg-card: #ffffff;
+    --bg-soft: #f2f4f8;
+    --text: #1a1d23;
+    --text-body: #3d414a;
+    --text-muted: #6b7280;
+    --text-dim: #9ca3af;
+    --accent: #2563eb;
+    --accent-soft: rgba(37, 99, 235, 0.06);
+    --accent-light: #dbeafe;
+    --border: #e5e7eb;
+    --border-strong: #d1d5db;
+    --radius: 8px;
+    --radius-lg: 12px;
+    --page-width: 210mm;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  body {
+    background: #e5e7eb;
+    font-family: var(--font);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+  }
+
+  .page {
+    width: var(--page-width);
+    max-width: 100%;
+    background: var(--bg);
+    border-radius: 4px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  /* ========== COVER ========== */
+  .cover {
+    position: relative;
+    padding: 56px 56px 44px;
+    min-height: 297mm;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+  }
+
+  .cover-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), #7c3aed);
+  }
+
+  .cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: auto;
+    padding-top: 12px;
+  }
+
+  .cover-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text);
+  }
+
+  .cover-brand .dot {
+    width: 10px; height: 10px; border-radius: 2px;
+    background: var(--accent);
+  }
+
+  .cover-brand b { color: var(--accent); }
+
+  .cover-tag {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+  }
+
+  .cover-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px 0 48px;
+  }
+
+  .cover h1 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  .cover h1 .accent { color: var(--accent); }
+
+  .cover h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+  }
+
+  .cover-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+    margin-top: 24px;
+    padding: 20px 24px;
+    background: var(--bg-soft);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+
+  .cover-meta .item .lbl {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .cover-meta .item .val {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .cover-company {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cover-company .label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .cover-company .name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .cover-company .address {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    text-align: right;
+  }
+
+  .cover-bottom {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  /* ========== CONTENT ========== */
+  .content {
+    padding: 48px 52px;
+    page-break-after: always;
+  }
+
+  .page-break { page-break-after: always; }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+
+  .section-title .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; height: 28px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+
+  .section-line {
+    width: 36px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 1px;
+    margin: 8px 0 22px;
+  }
+
+  .section-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    max-width: 520px;
+  }
+
+  .box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .box.soft {
+    background: var(--bg-soft);
+  }
+
+  .box h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  .box h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text);
+  }
+
+  .box p, .box li {
+    font-size: 13px;
+    color: var(--text-body);
+    line-height: 1.65;
+  }
+
+  .box ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .box ul li {
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+
+  .box ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--text-dim);
+    font-size: 12px;
+  }
+
+  .box .strong {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 3px;
+    background: var(--bg-soft);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+
+  .tag.build { background: #eff6ff; color: var(--accent); border-color: #bfdbfe; }
+  .tag.done { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+  .tag.next { background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 14px 0;
+  }
+
+  table th {
+    text-align: left;
+    padding: 8px 12px;
+    background: var(--bg-soft);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--border-strong);
+  }
+
+  table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-body);
+  }
+
+  table tr:last-child td { border-bottom: none; }
+
+  table tr.total td {
+    border-top: 2px solid var(--border-strong);
+    font-weight: 600;
+    color: var(--text);
+    background: var(--bg-soft);
+  }
+
+  .divider-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 28px 0 18px;
+    color: var(--text-dim);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+
+  .divider-text::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border), transparent);
+  }
+
+  /* Timeline */
+  .timeline-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 18px;
+    padding-left: 20px;
+    border-left: 2px solid var(--border);
+    position: relative;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 4px;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .timeline-item .week {
+    min-width: 70px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .timeline-item .desc h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  .timeline-item .desc p {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* Pricing (subtle) */
+  .pricing-summary {
+    margin-bottom: 24px;
+  }
+
+  .pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pricing-row:last-child {
+    border-bottom: none;
+  }
+
+  .pricing-row .label {
+    font-size: 14px;
+    color: var(--text-body);
+  }
+
+  .pricing-row .value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .pricing-row.total {
+    border-top: 2px solid var(--text);
+    padding-top: 12px;
+    margin-top: 4px;
+  }
+
+  .pricing-row.total .label,
+  .pricing-row.total .value {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .pricing-row .note {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  /* Payment terms */
+  .payment-terms {
+    display: flex;
+    gap: 16px;
+  }
+
+  .payment-term {
+    flex: 1;
+    padding: 14px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+
+  .payment-term .step {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .payment-term p {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .check { color: #15803d; font-weight: 600; }
+
+  /* Next steps */
+  .step-card {
+    padding: 14px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+  }
+
+  .step-card .num {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .step-card p {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  .footer-note {
+    margin-top: 36px;
+    padding: 18px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .footer-note strong { color: var(--accent); }
+
+  /* Signature */
+  .sig-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .sig-box {
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+  }
+
+  .sig-box h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .sig-box .line {
+    height: 1px;
+    background: var(--border-strong);
+    margin: 32px 0 4px;
+  }
+
+  .sig-box .label {
+    font-size: 10px;
+    color: var(--text-dim);
+  }
+
+  .sig-box .name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  .sig-box .sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  @media print {
+    html, body { width: 210mm; height: 297mm; background: white; padding: 0; }
+    body { display: block; }
+    .page { box-shadow: none; border-radius: 0; width: 210mm; min-height: 297mm; margin: 0; page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+    .page-break { page-break-after: always; }
+    .cover { min-height: 297mm; padding: 44px 48px; }
+    .content { padding: 36px 44px; min-height: 297mm; box-sizing: border-box; }
+    .cover-bottom { margin-top: auto; }
+  }
+
+  @media screen and (max-width: 700px) {
+    .cover { padding: 28px 20px; }
+    .content { padding: 24px 18px; }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .cover-meta { grid-template-columns: 1fr; }
+    .payment-terms { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ======== PAGE 1: COVER ======== -->
+<div class="page cover">
+  <div class="cover-bar"></div>
+
+  <div class="cover-top">
+    <div class="cover-brand">
+      <span class="dot"></span>
+      FX<b>-Teller</b>
+    </div>
+    <img src="../axivence logo.jpeg" alt="Axivence" style="height:36px;border-radius:4px;">
+  </div>
+
+  <div class="cover-body">
+    <h1>
+      A live trading room<br>
+      that fits in a <span class="accent">browser.</span>
+    </h1>
+    <h2>Project Proposal &amp; Development Plan</h2>
+
+    <div class="cover-meta">
+      <div class="item">
+        <div class="lbl">Prepared for</div>
+        <div class="val">Kiranchand</div>
+      </div>
+      <div class="item">
+        <div class="lbl">Project</div>
+        <div class="val">FX-Teller Phase 1</div>
+      </div>
+      <div class="item">
+        <div class="lbl">Date</div>
+        <div class="val">June 2026</div>
+      </div>
+      <div class="item">
+        <div class="lbl">Valid until</div>
+        <div class="val">July 2026</div>
+      </div>
+    </div>
+
+    <div class="cover-company">
+      <div>
+        <div class="label">Prepared by</div>
+        <div class="name">Axivence</div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:2px;">axivence.com</div>
+      </div>
+      <div class="address">
+        45, 9th St Ext, Gandhipuram,<br>
+        Coimbatore, Tamil Nadu 641012
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <span>Confidential</span>
+    <span>Version 1.0</span>
+  </div>
+</div>
+
+<!-- ======== PAGE 2: EXECUTIVE SUMMARY ======== -->
+<div class="page content">
+  <div class="section-title"><span class="num">01</span>Executive Summary</div>
+  <div class="section-line"></div>
+  <p class="section-sub">A bird's-eye view of what we are building, why, and how.</p>
+
+  <div class="box soft">
+    <h3>What is FX-Teller?</h3>
+    <p>
+      FX-Teller is a live podcast-style trading community built for forex traders in Kerala, India.
+      A single host streams live audio commentary on market sessions and pushes real-time trade calls
+      to listeners — with instant alerts, sentiment-driven music cues, and a simple subscription model.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>Phase 1 Strategy: Web-First</h3>
+    <p>
+      Rather than building a native mobile app (which requires App Store approval, platform-specific
+      development, and weeks of testing), Phase 1 launches as a <span class="strong">browser-based
+      web application</span>. This approach:
+    </p>
+    <ul style="margin-top:8px;">
+      <li>Gets the product to market in <span class="strong">4 weeks</span> vs. 8–12 weeks for mobile</li>
+      <li>Works instantly on any device — phone, tablet, laptop — no install required</li>
+      <li>Lets us <span class="strong">validate with real users</span> before investing further</li>
+      <li>Reuses the existing Host Console and NestJS backend already built</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3>Why This Approach Wins</h3>
+    <p>
+      Every day we are not live is a day we are not learning. A web-first Phase&nbsp;1 means we
+      can sign up real traders, collect feedback, and prove the model — all before committing to
+      native mobile app development in Phase&nbsp;2. The mobile app will share the same backend,
+      so no work is wasted.
+    </p>
+  </div>
+
+  <div class="divider-text">Core value proposition</div>
+
+  <div class="grid-3">
+    <div class="box" style="margin:0">
+      <h4>Live Audio</h4>
+      <p>Real-time commentary via 100ms.live. Listen through your browser — no downloads, no apps.</p>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Instant Calls</h4>
+      <p>Trade calls arrive in under a second with a browser notification. Pair, direction, entry, SL, TP — all on screen.</p>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Sentiment Cues</h4>
+      <p>Background music switches between Calm and Alert. You feel the market before you read it.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ======== PAGE 3: PROJECT SCOPE ======== -->
+<div class="page content page-break">
+  <div class="section-title"><span class="num">02</span>Project Scope</div>
+  <div class="section-line"></div>
+  <p class="section-sub">Exactly what Phase 1 includes — and what it does not.</p>
+
+  <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;">1. Listener Web App <span class="tag build">Build</span></h3>
+  <p style="color:var(--text-muted);font-size:13px;margin-bottom:14px;">
+    A browser-based interface where traders join live sessions, hear audio commentary, and receive trade calls.
+  </p>
+  <div class="grid-2">
+    <div class="box" style="margin:0">
+      <ul>
+        <li>Phone OTP authentication — no password needed</li>
+        <li>Live audio room via 100ms embedded player</li>
+        <li>Real-time trade call cards with pair, direction, entry, SL, TP</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <ul>
+        <li>Browser push notifications for incoming trade calls</li>
+        <li>Session schedule with upcoming trading sessions</li>
+        <li>Trial countdown banner for the 3-day free trial</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <ul>
+        <li>Razorpay checkout for subscription (pricing to be decided)</li>
+        <li>Music sentiment indicator — Calm / Alert state</li>
+        <li>User profile with name, phone, and subscription status</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <ul>
+        <li>Responsive, mobile-first design that works on all screen sizes</li>
+        <li>PWA basics for "Add to Home Screen" on supported browsers</li>
+        <li>Auto-reconnect on network drop</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px;font-weight:600;margin:24px 0 10px;">2. Host Console <span class="tag done">Built</span></h3>
+  <p style="color:var(--text-muted);font-size:13px;margin-bottom:14px;">
+    The host's web dashboard for running live sessions. Already built — minor polish and deployment.
+  </p>
+  <div class="grid-2">
+    <div class="box" style="margin:0">
+      <ul>
+        <li>Start and stop live sessions</li>
+        <li>Push trade calls with instrument, side, entry, SL, TP</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <ul>
+        <li>Switch music sentiment between Calm and Alert</li>
+        <li>View recent trade call history</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px;font-weight:600;margin:24px 0 10px;">3. Backend API <span class="tag build">Complete &amp; Deploy</span></h3>
+  <p style="color:var(--text-muted);font-size:13px;margin-bottom:14px;">
+    NestJS backend powering all application modules. Already scaffolded; needs completion and deployment.
+  </p>
+  <div class="grid-2">
+    <div class="box" style="margin:0">
+      <h4>Auth &amp; Users</h4>
+      <ul>
+        <li>Phone OTP request and verification</li>
+        <li>JWT session management</li>
+        <li>User profile and role management</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Sessions &amp; 100ms</h4>
+      <ul>
+        <li>Create and manage live sessions</li>
+        <li>100ms token minting for host and listener roles</li>
+        <li>SSE event broadcast bus for real-time updates</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Trade Calls &amp; Music</h4>
+      <ul>
+        <li>Push trade calls with real-time broadcast</li>
+        <li>Music sentiment state switching</li>
+        <li>Recent calls history API</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Subscriptions</h4>
+      <ul>
+        <li>Razorpay subscription creation</li>
+        <li>Webhook verification handler</li>
+        <li>Trial state management</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider-text"></div>
+
+  <div class="box" style="background:var(--bg-soft);">
+    <h4 style="color:var(--text-muted);font-weight:500;">Deferred to Phase 2+ (Out of Scope)</h4>
+    <div class="grid-2" style="margin-top:6px;">
+      <ul>
+        <li>Native mobile apps (iOS / Android)</li>
+        <li>In-app chat between listeners and host</li>
+        <li>Multi-host marketplace</li>
+      </ul>
+      <ul>
+        <li>Advanced analytics dashboard</li>
+        <li>Referral program</li>
+        <li>Yearly subscription plans</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ======== PAGE 4: DELIVERABLES & TIMELINE ======== -->
+<div class="page content page-break">
+  <div class="section-title"><span class="num">03</span>Deliverables &amp; Timeline</div>
+  <div class="section-line"></div>
+  <p class="section-sub">What you will receive from this engagement and the delivery schedule.</p>
+
+  <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;">Deliverables</h3>
+  <div class="grid-2" style="margin-bottom:24px;">
+    <div class="box" style="margin:0">
+      <h4>Browser-Based Web App (Beta)</h4>
+      <p>Listener web interface + host console, deployed and accessible via your domain. First-month delivery is a fully usable beta.</p>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Backend API</h4>
+      <p>Complete NestJS API with all modules deployed on the production VPS.</p>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Database &amp; Infrastructure</h4>
+      <p>PostgreSQL 16 with schema, migrations, SSL, firewall, and daily backups.</p>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Documentation</h4>
+      <p>Setup guide, admin instructions, and API endpoint reference.</p>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Post-Launch Support</h4>
+      <p>2 weeks of bug fixes and minor adjustments after the launch date.</p>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Handover</h4>
+      <p>Source code access, admin credentials, and a handover call to walk through everything.</p>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;">Timeline · 4 Weeks</h3>
+
+  <div class="timeline-item">
+    <div class="week">Week 1</div>
+    <div class="desc">
+      <h4>Backend Completion &amp; Infrastructure</h4>
+      <p>
+        Complete and test all backend modules. Set up the production VPS with Docker, PostgreSQL,
+        SWAG reverse proxy, and SSL certificates. Deploy backend to staging.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="week">Week 2</div>
+    <div class="desc">
+      <h4>Listener Web App Development</h4>
+      <p>
+        Build the browser-based listener interface: authentication flow, 100ms audio integration,
+        trade call cards, session schedule, trial banner, and Razorpay checkout. Connect to backend APIs.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="week">Week 3</div>
+    <div class="desc">
+      <h4>Integration, Polish &amp; Testing</h4>
+      <p>
+        End-to-end testing of the full user flow. Browser notification setup, responsive design QA,
+        edge case handling, and performance optimisation.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="week">Week 4</div>
+    <div class="desc">
+      <h4>Deployment, UAT &amp; Launch</h4>
+      <p>
+        Production deployment, domain and DNS configuration. User acceptance testing with you and
+        initial traders. Documentation handover and launch.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ======== PAGE 5: PRICING ======== -->
+<div class="page content page-break">
+  <div class="section-title"><span class="num">04</span>Pricing &amp; Payment Terms</div>
+  <div class="section-line"></div>
+  <p class="section-sub">A transparent breakdown of development costs and ongoing expenses.</p>
+
+  <h3 style="font-size:15px;font-weight:600;margin-bottom:10px;">Development Cost</h3>
+
+  <div class="pricing-summary">
+    <div class="pricing-row">
+      <span class="label">Phase 1 Web Application Development</span>
+      <span class="value">₹65,000</span>
+    </div>
+    <div class="pricing-row">
+      <span class="label">Advance payment (50% — due on project start)</span>
+      <span class="value">₹32,500</span>
+    </div>
+    <div class="pricing-row">
+      <span class="label">Balance payment (50% — due on delivery)</span>
+      <span class="value">₹32,500</span>
+    </div>
+    <div class="pricing-row total">
+      <span class="label">Total development cost</span>
+      <span class="value">₹65,000</span>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text-muted);margin-bottom:24px;line-height:1.5;">
+    The development cost is a fixed, one-time fee. No hidden charges, no scope creep.
+    Any changes outside the agreed scope will be discussed and quoted separately.
+  </div>
+
+  <div class="divider-text">Ongoing costs (billed as actuals)</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>VPS Hosting (OVH)</td>
+        <td>2 vCPU, 4 GB RAM, 80 GB SSD — billed as actual</td>
+      </tr>
+      <tr>
+        <td>Domain Name</td>
+        <td>.app or .in domain — billed as actual</td>
+      </tr>
+      <tr>
+        <td>100ms.live (Audio Streaming)</td>
+        <td>Free tier included up to 10,000 min/month; paid beyond — billed as actual</td>
+      </tr>
+      <tr>
+        <td>Razorpay (Payment Gateway)</td>
+        <td>Standard processing fee — billed as actual</td>
+      </tr>
+      <tr>
+        <td>SMS Provider (OTP Delivery)</td>
+        <td>Pay-as-you-go — billed as actual</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="font-size:12px;color:var(--text-muted);margin-top:10px;line-height:1.5;">
+    All ongoing costs are billed at actual with no markup. You may choose to procure any of these services directly if you prefer.
+  </div>
+
+  <div class="divider-text">Payment terms</div>
+
+  <div class="payment-terms">
+    <div class="payment-term">
+      <div class="step">Step 1</div>
+      <p><span class="strong">₹32,500</span> advance payment required to begin development</p>
+    </div>
+    <div class="payment-term">
+      <div class="step">Step 2</div>
+      <p><span class="strong">₹32,500</span> balance due on successful delivery of Phase 1</p>
+    </div>
+    <div class="payment-term">
+      <div class="step">Ongoing</div>
+      <p>Infrastructure costs invoiced monthly at actual with receipts</p>
+    </div>
+  </div>
+</div>
+
+<!-- ======== PAGE 6: ASSUMPTIONS & NEXT STEPS ======== -->
+<div class="page content page-break">
+  <div class="section-title"><span class="num">05</span>Assumptions &amp; Next Steps</div>
+  <div class="section-line"></div>
+  <p class="section-sub">What we assume from your side, and how we move forward together.</p>
+
+  <h3 style="font-size:15px;font-weight:600;margin-bottom:10px;">Responsibilities</h3>
+  <div class="grid-2">
+    <div class="box" style="margin:0">
+      <h4>Client (Kiranchand)</h4>
+      <ul>
+        <li>Provide necessary account credentials (100ms.live, Razorpay, SMS, domain, etc.)</li>
+        <li>Provide content: trade calls, session schedule, brand assets</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <h4>Developer (Axivence)</h4>
+      <ul>
+        <li>Build and deploy the complete web application</li>
+        <li>Set up VPS, database, and all infrastructure</li>
+        <li>Configure SSL, DNS, and server security</li>
+        <li>Provide full documentation and handover</li>
+        <li>2 weeks of post-launch bug fix support</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider-text">Future phases</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Scope</th>
+        <th>When</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="tag done">Phase 1</span></td>
+        <td>Web app: listener interface + host console + backend</td>
+        <td>Now (4 weeks)</td>
+      </tr>
+      <tr>
+        <td><span class="tag next">Phase 2</span></td>
+        <td>Native mobile apps (iOS + Android), in-app chat, reactions, referral system</td>
+        <td>After Phase 1 validation</td>
+      </tr>
+      <tr>
+        <td><span class="tag next">Phase 3</span></td>
+        <td>Multi-host marketplace, yearly plans, analytics dashboard, public API</td>
+        <td>After Phase 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="divider-text">Next steps</div>
+
+  <div class="grid-4" style="margin-top:6px;">
+    <div class="step-card">
+      <div class="num">1</div>
+      <p>Review and sign this proposal</p>
+    </div>
+    <div class="step-card">
+      <div class="num">2</div>
+      <p>Pay the 50% advance (₹32,500)</p>
+    </div>
+    <div class="step-card">
+      <div class="num">3</div>
+      <p>1-hour kickoff meeting to finalise details</p>
+    </div>
+    <div class="step-card">
+      <div class="num">4</div>
+      <p>Development begins — Week 1 of 4</p>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    We look forward to bringing FX-Teller to life.<br>
+    Questions? Reach out at <strong>hello@axivence.com</strong>
+  </div>
+</div>
+
+<!-- ======== PAGE 7: AGREEMENT ======== -->
+<div class="page content">
+  <div class="section-title"><span class="num">06</span>Agreement</div>
+  <div class="section-line"></div>
+  <p class="section-sub">Please sign below to accept this proposal and begin Phase 1 development.</p>
+
+  <div class="sig-grid">
+    <div class="sig-box">
+      <h4>Accepted by (Client)</h4>
+      <div style="margin-bottom:20px;">
+        <div class="name">Kiranchand</div>
+        <div class="sub">FX-Teller</div>
+      </div>
+      <div class="line"></div>
+      <div class="label">Signature &amp; Date</div>
+    </div>
+    <div class="sig-box">
+      <h4>Accepted by (Developer)</h4>
+      <div style="margin-bottom:20px;">
+        <div class="name">Axivence</div>
+        <div class="sub">45, 9th St Ext, Gandhipuram, Coimbatore — 641012</div>
+      </div>
+      <div class="line"></div>
+      <div class="label">Signature &amp; Date</div>
+    </div>
+  </div>
+
+  <div class="footer-note" style="margin-top:28px;">
+    <strong>FX-Teller</strong> — Phase 1 Web Application Development<br>
+    Proposal Version 1.0 · June 2026<br>
+    <span style="font-size:11px;color:var(--text-dim);">This document is confidential and intended solely for the parties named above.</span>
+  </div>
+</div>
+
+</body>
+</html>
