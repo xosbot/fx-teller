@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect width="700" height="240" fill="white"/>
+<text x="350" y="20" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="#1B1B2F">24-Month Strategic Roadmap</text>
+<rect x="30.0" y="40" width="75.0" height="14" rx="2" fill="#1B1B2F" opacity="0.85"/>
+<text x="67.5" y="50" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q1</text>
+<text x="638" y="50" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F">Foundation</text>
+<rect x="105.0" y="60" width="75.0" height="14" rx="2" fill="#4A4A6A" opacity="0.85"/>
+<text x="142.5" y="70" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q2</text>
+<text x="638" y="70" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Founding Cohort</text>
+<rect x="180.0" y="80" width="75.0" height="14" rx="2" fill="#7A9E7E" opacity="0.85"/>
+<text x="217.5" y="90" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q3</text>
+<text x="638" y="90" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#7A9E7E">Founding Complete</text>
+<rect x="255.0" y="100" width="75.0" height="14" rx="2" fill="#C5A55A" opacity="0.85"/>
+<text x="292.5" y="110" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q4</text>
+<text x="638" y="110" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#C5A55A">Year-1 Validation</text>
+<rect x="330.0" y="120" width="75.0" height="14" rx="2" fill="#C87A6A" opacity="0.85"/>
+<text x="367.5" y="130" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q5</text>
+<text x="638" y="130" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#C87A6A">Year-2 Scale</text>
+<rect x="405.0" y="140" width="75.0" height="14" rx="2" fill="#7A9E7E" opacity="0.85"/>
+<text x="442.5" y="150" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q6</text>
+<text x="638" y="150" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#7A9E7E">Year-2 Mid</text>
+<rect x="480.0" y="160" width="75.0" height="14" rx="2" fill="#4A4A6A" opacity="0.85"/>
+<text x="517.5" y="170" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q7</text>
+<text x="638" y="170" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Institutionalise</text>
+<rect x="555.0" y="180" width="75.0" height="14" rx="2" fill="#1B1B2F" opacity="0.85"/>
+<text x="592.5" y="190" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">Q8</text>
+<text x="638" y="190" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F">Year-2 End</text>
+<line x1="105.0" y1="35" x2="105.0" y2="205" stroke="#C5A55A" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="105.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A" font-weight="600">50 Founding</text>
+<line x1="180.0" y1="35" x2="180.0" y2="205" stroke="#C5A55A" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="180.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A" font-weight="600">V1 Live</text>
+<line x1="330.0" y1="35" x2="330.0" y2="205" stroke="#C5A55A" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="330.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A" font-weight="600">Raise Closes</text>
+<line x1="480.0" y1="35" x2="480.0" y2="205" stroke="#C5A55A" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="480.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A" font-weight="600">House Build</text>
+<line x1="630.0" y1="35" x2="630.0" y2="205" stroke="#C5A55A" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="630.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A" font-weight="600">House Opens</text>
+<text x="30.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="105.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="180.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="255.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="330.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="405.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="480.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="555.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+<text x="630.0" y="220" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#ccc">|</text>
+</svg>

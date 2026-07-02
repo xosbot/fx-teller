@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg">
+<rect width="520" height="520" fill="white"/>
+<text x="260" y="30" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="16" font-weight="700" fill="#1B1B2F">Value Creation Flywheel</text>
+<circle cx="260.0" cy="100.0" r="42" fill="#C5A55A" opacity="0.15"/>
+<circle cx="260.0" cy="100.0" r="42" fill="none" stroke="#C5A55A" stroke-width="1.5"/>
+<text x="260.0" y="98.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Member</text>
+<text x="260.0" y="109.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Value</text>
+<line x1="296.4" y1="121.0" x2="379.5" y2="169.0" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+<circle cx="415.9" cy="190.0" r="42" fill="#C5A55A" opacity="0.15"/>
+<circle cx="415.9" cy="190.0" r="42" fill="none" stroke="#C5A55A" stroke-width="1.5"/>
+<text x="415.9" y="188.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Trust</text>
+<line x1="415.9" y1="232.0" x2="415.9" y2="328.0" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+<circle cx="415.9" cy="370.0" r="42" fill="#C5A55A" opacity="0.15"/>
+<circle cx="415.9" cy="370.0" r="42" fill="none" stroke="#C5A55A" stroke-width="1.5"/>
+<text x="415.9" y="368.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Retention</text>
+<line x1="379.5" y1="391.0" x2="296.4" y2="439.0" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+<circle cx="260.0" cy="460.0" r="42" fill="#C5A55A" opacity="0.15"/>
+<circle cx="260.0" cy="460.0" r="42" fill="none" stroke="#C5A55A" stroke-width="1.5"/>
+<text x="260.0" y="458.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Referral</text>
+<line x1="223.6" y1="439.0" x2="140.5" y2="391.0" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+<circle cx="104.1" cy="370.0" r="42" fill="#C5A55A" opacity="0.15"/>
+<circle cx="104.1" cy="370.0" r="42" fill="none" stroke="#C5A55A" stroke-width="1.5"/>
+<text x="104.1" y="368.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Brand</text>
+<text x="104.1" y="379.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Equity</text>
+<line x1="104.1" y1="328.0" x2="104.1" y2="232.0" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+<circle cx="104.1" cy="190.0" r="42" fill="#C5A55A" opacity="0.15"/>
+<circle cx="104.1" cy="190.0" r="42" fill="none" stroke="#C5A55A" stroke-width="1.5"/>
+<text x="104.1" y="188.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Revenue</text>
+<line x1="140.5" y1="169.0" x2="223.6" y2="121.0" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+<defs><marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#C5A55A"/></marker></defs>
+<circle cx="260" cy="280" r="60" fill="#1B1B2F"/>
+<text x="260" y="274" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">PHILOSOPHY</text>
+<text x="260" y="290" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#C5A55A">in motion</text>
+</svg>

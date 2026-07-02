@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+<rect width="600" height="440" fill="white"/>
+<text x="300" y="28" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="16" font-weight="700" fill="#1B1B2F">Revenue Architecture</text>
+<text x="300" y="48" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" fill="#4A4A6A">Four tiers · Time-sequenced · Philosophy-defended</text>
+<rect x="110" y="70" width="380" height="68" rx="3" fill="#C87A6A" opacity="0.92"/>
+<text x="300" y="100" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="white">Future Revenue</text>
+<text x="300" y="122" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">International · Marketplace · AI Subscriptions</text>
+<text x="502" y="108" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" font-weight="700" fill="#C87A6A">Year 3+</text>
+<line x1="285" y1="138" x2="315" y2="158" stroke="#C5A55A" stroke-width="1.5"/>
+<polygon points="300,158 294,150 306,150" fill="#C5A55A"/>
+<rect x="140" y="158" width="320" height="68" rx="3" fill="#4A4A6A" opacity="0.92"/>
+<text x="300" y="188" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="white">Strategic Revenue</text>
+<text x="300" y="210" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">House · Publishing · Dubai Operations</text>
+<text x="472" y="196" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" font-weight="700" fill="#4A4A6A">Year 2+</text>
+<line x1="285" y1="226" x2="315" y2="246" stroke="#C5A55A" stroke-width="1.5"/>
+<polygon points="300,246 294,238 306,238" fill="#C5A55A"/>
+<rect x="170" y="246" width="260" height="68" rx="3" fill="#7A9E7E" opacity="0.92"/>
+<text x="300" y="276" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="white">Premium Revenue</text>
+<text x="300" y="298" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">Workshops · Roundtables · Coaching</text>
+<text x="442" y="284" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" font-weight="700" fill="#7A9E7E">Year 2+</text>
+<line x1="285" y1="314" x2="315" y2="334" stroke="#C5A55A" stroke-width="1.5"/>
+<polygon points="300,334 294,326 306,326" fill="#C5A55A"/>
+<rect x="200" y="334" width="200" height="68" rx="3" fill="#1B1B2F" opacity="0.92"/>
+<text x="300" y="364" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="white">Primary Revenue</text>
+<text x="300" y="386" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">Annual + Monthly · Founding Tier</text>
+<text x="412" y="372" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" font-weight="700" fill="#1B1B2F">Year 1+</text>
+</svg>

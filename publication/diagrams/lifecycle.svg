@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 170" xmlns="http://www.w3.org/2000/svg">
+<rect width="820" height="170" fill="white"/>
+<text x="410" y="22" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="#1B1B2F">12-Stage Member Lifecycle</text>
+<circle cx="62.5" cy="68" r="20" fill="#C5A55A" opacity="0.9"/>
+<text x="62.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">1</text>
+<text x="62.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Curiosity</text>
+<line x1="84.5" y1="68" x2="105.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="127.5" cy="68" r="20" fill="#C5A55A" opacity="0.9"/>
+<text x="127.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">2</text>
+<text x="127.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Application</text>
+<line x1="149.5" y1="68" x2="170.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="192.5" cy="68" r="20" fill="#C5A55A" opacity="0.9"/>
+<text x="192.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">3</text>
+<text x="192.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Acceptance</text>
+<line x1="214.5" y1="68" x2="235.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="257.5" cy="68" r="20" fill="#C5A55A" opacity="0.9"/>
+<text x="257.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">4</text>
+<text x="257.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Onboarding</text>
+<line x1="279.5" y1="68" x2="300.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="322.5" cy="68" r="20" fill="#7A9E7E" opacity="0.9"/>
+<text x="322.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">5</text>
+<text x="322.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">First Floor</text>
+<line x1="344.5" y1="68" x2="365.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="387.5" cy="68" r="20" fill="#7A9E7E" opacity="0.9"/>
+<text x="387.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">6</text>
+<text x="387.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">First Win</text>
+<line x1="409.5" y1="68" x2="430.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="452.5" cy="68" r="20" fill="#7A9E7E" opacity="0.9"/>
+<text x="452.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">7</text>
+<text x="452.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Community</text>
+<line x1="474.5" y1="68" x2="495.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="517.5" cy="68" r="20" fill="#7A9E7E" opacity="0.9"/>
+<text x="517.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">8</text>
+<text x="517.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Habit</text>
+<line x1="539.5" y1="68" x2="560.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="582.5" cy="68" r="20" fill="#1B1B2F" opacity="0.9"/>
+<text x="582.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">9</text>
+<text x="582.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">House</text>
+<line x1="604.5" y1="68" x2="625.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="647.5" cy="68" r="20" fill="#1B1B2F" opacity="0.9"/>
+<text x="647.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">10</text>
+<text x="647.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Ambassador</text>
+<line x1="669.5" y1="68" x2="690.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="712.5" cy="68" r="20" fill="#1B1B2F" opacity="0.9"/>
+<text x="712.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">11</text>
+<text x="712.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Lifetime</text>
+<line x1="734.5" y1="68" x2="755.5" y2="68" stroke="#4A4A6A" stroke-width="0.8" opacity="0.4" marker-end="url(#arrowSlate)"/>
+<circle cx="777.5" cy="68" r="20" fill="#1B1B2F" opacity="0.9"/>
+<text x="777.5" y="73" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="white">12</text>
+<text x="777.5" y="105" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#1B1B2F" font-weight="600">Founder</text>
+<text x="127.5" y="138" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" font-weight="700" fill="#C5A55A">Discovery</text>
+<text x="387.5" y="138" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" font-weight="700" fill="#7A9E7E">Integration</text>
+<text x="647.5" y="138" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" font-weight="700" fill="#1B1B2F">Leadership</text>
+<defs><marker id="arrowSlate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4A4A6A" opacity="0.4"/></marker></defs>
+</svg>

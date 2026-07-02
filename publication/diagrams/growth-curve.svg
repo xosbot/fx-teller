@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 580 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="580" height="280" fill="white"/>
+<text x="290" y="22" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="#1B1B2F">Membership Growth — 3 Scenarios</text>
+<line x1="60" y1="230" x2="540" y2="230" stroke="#ccc" stroke-width="0.8"/>
+<line x1="60" y1="50" x2="60" y2="230" stroke="#ccc" stroke-width="0.8"/>
+<line x1="60" y1="230.0" x2="540" y2="230.0" stroke="#eee" stroke-width="0.3"/>
+<text x="54" y="233.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">0</text>
+<line x1="60" y1="194.0" x2="540" y2="194.0" stroke="#eee" stroke-width="0.3"/>
+<text x="54" y="197.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">200</text>
+<line x1="60" y1="158.0" x2="540" y2="158.0" stroke="#eee" stroke-width="0.3"/>
+<text x="54" y="161.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">400</text>
+<line x1="60" y1="122.0" x2="540" y2="122.0" stroke="#eee" stroke-width="0.3"/>
+<text x="54" y="125.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">600</text>
+<line x1="60" y1="86.0" x2="540" y2="86.0" stroke="#eee" stroke-width="0.3"/>
+<text x="54" y="89.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">800</text>
+<line x1="60" y1="50.0" x2="540" y2="50.0" stroke="#eee" stroke-width="0.3"/>
+<text x="54" y="53.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">1000</text>
+<circle cx="60.0" cy="228.2" r="3" fill="#7A9E7E"/>
+<circle cx="140.0" cy="225.5" r="3" fill="#7A9E7E"/>
+<circle cx="220.0" cy="220.1" r="3" fill="#7A9E7E"/>
+<circle cx="300.0" cy="212.0" r="3" fill="#7A9E7E"/>
+<circle cx="380.0" cy="201.2" r="3" fill="#7A9E7E"/>
+<circle cx="460.0" cy="185.0" r="3" fill="#7A9E7E"/>
+<circle cx="540.0" cy="167.0" r="3" fill="#7A9E7E"/>
+<polyline points="60.0,228.2 140.0,225.5 220.0,220.1 300.0,212.0 380.0,201.2 460.0,185.0 540.0,167.0" fill="none" stroke="#7A9E7E" stroke-width="2"/>
+<circle cx="60.0" cy="228.2" r="3" fill="#C5A55A"/>
+<circle cx="140.0" cy="221.9" r="3" fill="#C5A55A"/>
+<circle cx="220.0" cy="212.0" r="3" fill="#C5A55A"/>
+<circle cx="300.0" cy="194.0" r="3" fill="#C5A55A"/>
+<circle cx="380.0" cy="167.0" r="3" fill="#C5A55A"/>
+<circle cx="460.0" cy="140.0" r="3" fill="#C5A55A"/>
+<circle cx="540.0" cy="104.0" r="3" fill="#C5A55A"/>
+<polyline points="60.0,228.2 140.0,221.9 220.0,212.0 300.0,194.0 380.0,167.0 460.0,140.0 540.0,104.0" fill="none" stroke="#C5A55A" stroke-width="2"/>
+<circle cx="60.0" cy="227.8" r="3" fill="#1B1B2F"/>
+<circle cx="140.0" cy="218.3" r="3" fill="#1B1B2F"/>
+<circle cx="220.0" cy="199.4" r="3" fill="#1B1B2F"/>
+<circle cx="300.0" cy="177.8" r="3" fill="#1B1B2F"/>
+<circle cx="380.0" cy="149.0" r="3" fill="#1B1B2F"/>
+<circle cx="460.0" cy="113.0" r="3" fill="#1B1B2F"/>
+<circle cx="540.0" cy="68.0" r="3" fill="#1B1B2F"/>
+<polyline points="60.0,227.8 140.0,218.3 220.0,199.4 300.0,177.8 380.0,149.0 460.0,113.0 540.0,68.0" fill="none" stroke="#1B1B2F" stroke-width="2"/>
+<text x="60.0" y="245" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">M0</text>
+<text x="140.0" y="245" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">M4</text>
+<text x="220.0" y="245" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">M8</text>
+<text x="300.0" y="245" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">M12</text>
+<text x="380.0" y="245" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">M16</text>
+<text x="460.0" y="245" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">M20</text>
+<text x="540.0" y="245" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" fill="#999">M24</text>
+<line x1="380" y1="262" x2="395" y2="262" stroke="#7A9E7E" stroke-width="2"/>
+<text x="400" y="265" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#666">Conservative</text>
+<line x1="440" y1="262" x2="455" y2="262" stroke="#C5A55A" stroke-width="2"/>
+<text x="460" y="265" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#666">Expected</text>
+<line x1="500" y1="262" x2="515" y2="262" stroke="#1B1B2F" stroke-width="2"/>
+<text x="520" y="265" text-anchor="start" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#666">Optimistic</text>
+</svg>

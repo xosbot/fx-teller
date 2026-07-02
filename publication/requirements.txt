@@ -1,0 +1,7 @@
+weasyprint
+python-pptx
+cairosvg
+cairo
+pillow
+markdown
+pyyaml

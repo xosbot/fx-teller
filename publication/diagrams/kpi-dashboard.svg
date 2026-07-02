@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="200" fill="white"/>
+<text x="300" y="22" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="#1B1B2F">Founder Dashboard — Top 8 KPIs</text>
+<rect x="12" y="45" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="79" y="70" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#1B1B2F">₹4.2L</text>
+<text x="79" y="87" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">MRR</text>
+<text x="79" y="98" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: ₹25L</text>
+<rect x="157" y="45" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="224" y="70" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#C5A55A">42</text>
+<text x="224" y="87" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Members</text>
+<text x="224" y="98" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: 500</text>
+<rect x="302" y="45" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="369" y="70" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#7A9E7E">78%</text>
+<text x="369" y="87" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Retention</text>
+<text x="369" y="98" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: ≥75%</text>
+<rect x="447" y="45" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="514" y="70" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#4A4A6A">8</text>
+<text x="514" y="87" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Apps/week</text>
+<text x="514" y="98" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: ≥5</text>
+<rect x="12" y="115" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="79" y="140" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#7A9E7E">99.8%</text>
+<text x="79" y="157" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Uptime</text>
+<text x="79" y="168" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: ≥99.5%</text>
+<rect x="157" y="115" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="224" y="140" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#C87A6A">₹1,780</text>
+<text x="224" y="157" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Cost/Member</text>
+<text x="224" y="168" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: ₹800</text>
+<rect x="302" y="115" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="369" y="140" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#C5A55A">8h/wk</text>
+<text x="369" y="157" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Writing</text>
+<text x="369" y="168" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: ≥10h/wk</text>
+<rect x="447" y="115" width="135" height="58" rx="3" fill="#F8F6F2" stroke="#E0DDD5" stroke-width="0.5"/>
+<text x="514" y="140" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#1B1B2F">850</text>
+<text x="514" y="157" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Subscribers</text>
+<text x="514" y="168" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="7" fill="#999">Target: 5,000</text>
+</svg>

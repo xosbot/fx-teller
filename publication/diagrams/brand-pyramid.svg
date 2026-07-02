@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg">
+<rect width="520" height="440" fill="white"/>
+<text x="260" y="24" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="#1B1B2F">Brand Pyramid</text>
+<text x="260" y="42" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" fill="#4A4A6A">Each level supports the one above</text>
+<rect x="120" y="380" width="280" height="50" rx="3" fill="#C5A55A" opacity="0.9"/>
+<text x="260" y="402" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="12" font-weight="700" fill="white">Voice</text>
+<text x="260" y="418" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">How the brand speaks</text>
+<rect x="105" y="280" width="310" height="50" rx="3" fill="#7A9E7E" opacity="0.9"/>
+<text x="260" y="302" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="12" font-weight="700" fill="white">Positioning</text>
+<text x="260" y="318" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">Where the brand sits</text>
+<rect x="90" y="180" width="340" height="50" rx="3" fill="#4A4A6A" opacity="0.9"/>
+<text x="260" y="202" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="12" font-weight="700" fill="white">Personality</text>
+<text x="260" y="218" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">What the brand feels like</text>
+<rect x="75" y="80" width="370" height="50" rx="3" fill="#1B1B2F" opacity="0.9"/>
+<text x="260" y="102" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="12" font-weight="700" fill="white">Values</text>
+<text x="260" y="118" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">What the brand believes</text>
+</svg>

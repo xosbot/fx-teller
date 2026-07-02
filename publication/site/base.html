@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}} · FX Teller</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#1B1B2F">
+<link rel="stylesheet" href="/theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <a href="/" class="brand">FX Teller <span class="brand-sub">·  Strategic Blueprint</span></a>
+        <nav class="primary-nav">
+            <a href="/page/context">Context</a>
+            <a href="/page/foundation">Foundation</a>
+            <a href="/page/business">Business</a>
+            <a href="/page/product">Product</a>
+            <a href="/page/marketing">Marketing</a>
+            <a href="/page/operations">Operations</a>
+            <a href="/page/execution">Execution</a>
+            <a href="/page/governance">Governance</a>
+            <a href="/page/roadmap">Roadmap</a>
+            <a href="/search">Search</a>
+            <a href="/downloads">Downloads</a>
+        </nav>
+        <div class="theme-switcher">
+            <button data-theme="light" class="theme-btn" title="Light">☀</button>
+            <button data-theme="dark" class="theme-btn" title="Dark">☾</button>
+            <button data-theme="print" class="theme-btn" title="Print">⎙</button>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="/" class="nav-item"><span class="nav-icon">◉</span> Home</a>
+                <a href="/page/context" class="nav-item"><span class="nav-icon">◉</span> Context</a>
+                <a href="/page/foundation" class="nav-item"><span class="nav-icon">◉</span> Foundation</a>
+                <a href="/page/business" class="nav-item"><span class="nav-icon">◉</span> Business</a>
+                <a href="/page/product" class="nav-item"><span class="nav-icon">◉</span> Product</a>
+                <a href="/page/marketing" class="nav-item"><span class="nav-icon">◉</span> Marketing</a>
+                <a href="/page/operations" class="nav-item"><span class="nav-icon">◉</span> Operations</a>
+                <a href="/page/execution" class="nav-item"><span class="nav-icon">◉</span> Execution</a>
+                <a href="/page/financial" class="nav-item"><span class="nav-icon">◉</span> Financial</a>
+                <a href="/page/governance" class="nav-item"><span class="nav-icon">◉</span> Governance</a>
+                <a href="/page/roadmap" class="nav-item"><span class="nav-icon">◉</span> Roadmap</a>
+                <a href="/page/research" class="nav-item"><span class="nav-icon">◉</span> Research</a>
+                <a href="/page/strategy-office" class="nav-item"><span class="nav-icon">◉</span> Strategy Office</a>
+                <a href="/page/archive" class="nav-item"><span class="nav-icon">◉</span> Archive</a>
+            </nav>
+        </aside>
+        <article class="article">
+            {{content}}
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">FX Teller</div>
+                <p class="footer-tag">A members' club for serious retail traders in India. Founded 2026.</p>
+            </div>
+            <div>
+                <h4>Repository</h4>
+                <a href="/page/context">Context</a>
+                <a href="/page/foundation">Foundation</a>
+                <a href="/page/business">Business</a>
+                <a href="/page/product">Product</a>
+                <a href="/page/execution">Execution</a>
+            </div>
+            <div>
+                <h4>Outputs</h4>
+                <a href="/downloads">PDF Playbook</a>
+                <a href="/downloads">PowerPoint Deck</a>
+                <a href="/downloads">Asset Bundle</a>
+            </div>
+            <div>
+                <h4>Meta</h4>
+                <a href="/search">Search</a>
+                <a href="/page/governance">Decision Register</a>
+                <a href="/page/archive">Archive</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>FX Teller · Strategic Blueprint · Version 1.0 · July 2026</span>
+            <span>Prepared by the Executive Strategy Office · Confidential</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    const theme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const t = btn.getAttribute('data-theme');
+            document.documentElement.setAttribute('data-theme', t);
+            localStorage.setItem('theme', t);
+        });
+    });
+    document.querySelectorAll('.sidebar-nav .nav-item, .primary-nav a').forEach(a => {
+        if (a.getAttribute('href') === window.location.pathname) {
+            a.classList.add('active');
+        }
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/*
+ * FX Teller Publication Theme — Design Tokens
+ * Shared across website, PDF, and PowerPoint.
+ */
+
+:root {
+    /* Brand colors */
+    --fx-navy:        #1B1B2F;
+    --fx-navy-light:  #2D2D4A;
+    --fx-gold:        #C5A55A;
+    --fx-gold-dark:   #A8883A;
+    --fx-cream:       #F5F0E8;
+    --fx-cream-dark:  #E8E0D0;
+    --fx-sage:        #7A9E7E;
+    --fx-slate:       #4A4A6A;
+    --fx-coral:       #C87A6A;
+    --fx-ink:         #1A1A1A;
+    --fx-text:        #2A2A2A;
+    --fx-muted:       #6E6E6E;
+    --fx-light:       #F8F6F2;
+    --fx-white:       #FFFFFF;
+    --fx-border:      #E0DDD5;
+
+    /* Typography — web (PDF uses different stack) */
+    --font-sans:      'Inter', 'DejaVu Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-serif:     'Lora', 'DejaVu Serif', Georgia, 'Times New Roman', serif;
+    --font-mono:      'JetBrains Mono', 'DejaVu Sans Mono', 'Menlo', monospace;
+
+    /* Type scale */
+    --text-xs:    0.75rem;
+    --text-sm:    0.875rem;
+    --text-base:  1rem;
+    --text-lg:    1.125rem;
+    --text-xl:    1.25rem;
+    --text-2xl:   1.5rem;
+    --text-3xl:   1.875rem;
+    --text-4xl:   2.25rem;
+    --text-5xl:   3rem;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+
+    /* Layout */
+    --max-w:        1200px;
+    --header-h:     64px;
+    --reading-w:    65ch;
+    --sidebar-w:    280px;
+
+    /* Effects */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow:    0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+
+    --radius-sm:  2px;
+    --radius:     4px;
+    --radius-md:  6px;
+    --radius-lg:  8px;
+    --radius-xl:  12px;
+    --radius-2xl: 16px;
+    --radius-full: 9999px;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --fx-ink:     #F5F5F5;
+    --fx-text:    #E5E5E5;
+    --fx-muted:   #999;
+    --fx-light:   #1A1A2E;
+    --fx-cream:   #2A2A3E;
+    --fx-cream-dark: #232337;
+    --fx-border:  #2A2A3E;
+    --fx-white:   #0E0E1A;
+    background: var(--fx-navy);
+}
+
+/* Print mode */
+@media print {
+    :root {
+        --fx-ink:     #000;
+        --fx-text:    #000;
+        --fx-muted:   #555;
+        --fx-light:   #FFF;
+        --fx-cream:   #F5F0E8;
+        --fx-border:  #DDD;
+        --fx-white:   #FFF;
+    }
+    [data-theme="dark"] {
+        --fx-ink:   #000;
+        --fx-text:  #000;
+        --fx-light: #FFF;
+        --fx-cream: #F5F0E8;
+    }
+}

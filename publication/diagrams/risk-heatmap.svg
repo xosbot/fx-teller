@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 620 520" xmlns="http://www.w3.org/2000/svg">
+<rect width="620" height="520" fill="white"/>
+<text x="310" y="22" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="14" font-weight="700" fill="#1B1B2F">Risk Heatmap — Top 10 Risks</text>
+<rect x="80" y="340" width="70" height="70" fill="#5CB85C" fill-opacity="0.32" stroke="white" stroke-width="0.5"/>
+<rect x="150" y="340" width="70" height="70" fill="#5CB85C" fill-opacity="0.33999999999999997" stroke="white" stroke-width="0.5"/>
+<rect x="220" y="340" width="70" height="70" fill="#5CB85C" fill-opacity="0.36" stroke="white" stroke-width="0.5"/>
+<rect x="290" y="340" width="70" height="70" fill="#5CB85C" fill-opacity="0.38" stroke="white" stroke-width="0.5"/>
+<rect x="360" y="340" width="70" height="70" fill="#5CB85C" fill-opacity="0.4" stroke="white" stroke-width="0.5"/>
+<rect x="80" y="270" width="70" height="70" fill="#5CB85C" fill-opacity="0.33999999999999997" stroke="white" stroke-width="0.5"/>
+<rect x="150" y="270" width="70" height="70" fill="#5CB85C" fill-opacity="0.38" stroke="white" stroke-width="0.5"/>
+<rect x="220" y="270" width="70" height="70" fill="#5CB85C" fill-opacity="0.42" stroke="white" stroke-width="0.5"/>
+<rect x="290" y="270" width="70" height="70" fill="#F0AD4E" fill-opacity="0.45999999999999996" stroke="white" stroke-width="0.5"/>
+<rect x="360" y="270" width="70" height="70" fill="#F0AD4E" fill-opacity="0.5" stroke="white" stroke-width="0.5"/>
+<rect x="80" y="200" width="70" height="70" fill="#5CB85C" fill-opacity="0.36" stroke="white" stroke-width="0.5"/>
+<rect x="150" y="200" width="70" height="70" fill="#5CB85C" fill-opacity="0.42" stroke="white" stroke-width="0.5"/>
+<rect x="220" y="200" width="70" height="70" fill="#F0AD4E" fill-opacity="0.48" stroke="white" stroke-width="0.5"/>
+<rect x="290" y="200" width="70" height="70" fill="#F0AD4E" fill-opacity="0.54" stroke="white" stroke-width="0.5"/>
+<rect x="360" y="200" width="70" height="70" fill="#D9534F" fill-opacity="0.6" stroke="white" stroke-width="0.5"/>
+<rect x="80" y="130" width="70" height="70" fill="#5CB85C" fill-opacity="0.38" stroke="white" stroke-width="0.5"/>
+<rect x="150" y="130" width="70" height="70" fill="#F0AD4E" fill-opacity="0.45999999999999996" stroke="white" stroke-width="0.5"/>
+<rect x="220" y="130" width="70" height="70" fill="#F0AD4E" fill-opacity="0.54" stroke="white" stroke-width="0.5"/>
+<rect x="290" y="130" width="70" height="70" fill="#D9534F" fill-opacity="0.62" stroke="white" stroke-width="0.5"/>
+<rect x="360" y="130" width="70" height="70" fill="#D9534F" fill-opacity="0.7" stroke="white" stroke-width="0.5"/>
+<rect x="80" y="60" width="70" height="70" fill="#5CB85C" fill-opacity="0.4" stroke="white" stroke-width="0.5"/>
+<rect x="150" y="60" width="70" height="70" fill="#F0AD4E" fill-opacity="0.5" stroke="white" stroke-width="0.5"/>
+<rect x="220" y="60" width="70" height="70" fill="#D9534F" fill-opacity="0.6" stroke="white" stroke-width="0.5"/>
+<rect x="290" y="60" width="70" height="70" fill="#D9534F" fill-opacity="0.7" stroke="white" stroke-width="0.5"/>
+<rect x="360" y="60" width="70" height="70" fill="#D9534F" fill-opacity="0.8" stroke="white" stroke-width="0.5"/>
+<circle cx="395.0" cy="235.0" r="14" fill="#1B1B2F"/>
+<text x="395.0" y="238.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="395.0" cy="235.0" r="14" fill="#1B1B2F"/>
+<text x="395.0" y="238.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="395.0" cy="305.0" r="14" fill="#1B1B2F"/>
+<text x="395.0" y="308.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="325.0" cy="235.0" r="14" fill="#1B1B2F"/>
+<text x="325.0" y="238.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="325.0" cy="305.0" r="14" fill="#1B1B2F"/>
+<text x="325.0" y="308.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="255.0" cy="235.0" r="14" fill="#1B1B2F"/>
+<text x="255.0" y="238.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="255.0" cy="235.0" r="14" fill="#1B1B2F"/>
+<text x="255.0" y="238.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="255.0" cy="305.0" r="14" fill="#1B1B2F"/>
+<text x="255.0" y="308.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="255.0" cy="305.0" r="14" fill="#1B1B2F"/>
+<text x="255.0" y="308.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<circle cx="185.0" cy="305.0" r="14" fill="#1B1B2F"/>
+<text x="185.0" y="308.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="8" font-weight="700" fill="white">R</text>
+<text x="115.0" y="428" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">1</text>
+<text x="185.0" y="428" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Min</text>
+<text x="255.0" y="428" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">2</text>
+<text x="325.0" y="428" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">Min</text>
+<text x="395.0" y="428" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">3</text>
+<text x="72" y="378.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">5</text>
+<text x="72" y="308.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">4</text>
+<text x="72" y="238.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">3</text>
+<text x="72" y="168.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">2</text>
+<text x="72" y="98.0" text-anchor="end" font-family="Inter,DejaVu Sans,sans-serif" font-size="9" fill="#4A4A6A">1</text>
+<text x="255.0" y="442" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">Impact →</text>
+<text x="20" y="235.0" text-anchor="middle" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F" transform="rotate(-90, 20, 235.0)">Likelihood →</text>
+<text x="80" y="460" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">R1: Founder burnout  ·  R2: Retention&lt;75%  ·  R3: Raise fails  ·  R4: SEBI  ·  R5: Host departure</text>
+<text x="80" y="475" font-family="Inter,DejaVu Sans,sans-serif" font-size="10" font-weight="700" fill="#1B1B2F">R6: V1 delay  ·  R7: Low apps  ·  R8: Tech outage  ·  R9: Bad hire  ·  R10: Brand drift</text>
+</svg>
